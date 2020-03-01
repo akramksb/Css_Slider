@@ -1,70 +1,71 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Slider</title>
-        <style>
-            *{margin:0; padding:0; box-sizing: border-box;}
-            html{font-size: 0.73vw;}
-            body{ position: relative;}
-            .slider-cont{
-                position: relative;
-                top: 7rem;
-                display: block;
-                margin: auto;
-                width:92.5rem;
-                height:52rem;
-                border:none;
-            }
-
-            .line{
-                position: absolute;
-                top: 41rem;
-                width:100%;
-                height: 39rem;
-                background-color:lightskyblue;
-                z-index: -1;
-            }
-            .title{
-                position: relative;
-                top:2rem;
-                width: 100%;
-                height:20rem;
-                text-align: center;
-                font-size:8rem;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            }
-            h1{ font-weight: lighter;}
-            .main{
-                position: relative;
-                top:25rem;
-                height: 130rem; }
-            
-            .character-card{
-                position: absolute;
-                width: 75rem;
-                height: 35rem;
-                border-radius: 1rem;
-            }
-            .finn{
-                top: 1rem;
-                right: 12rem;
-                background-color: rgb(16, 119, 236);
-            }
-            .jake{
-                position: absolute;
-                top: 43rem;
-                left: 12rem;
-                background-color: rgb(243, 229, 26);
-            }
-        </style>
+        <title>Adventure Time</title>
+        <link rel="stylesheet" href="style.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <div class="title"><h1>Adventure Time</h1></div>
-        <iframe class="slider-cont" src="sss.html"></iframe>
-        <div class="line"></div>
+        <div class="top">
+            <iframe class="slider-cont" src="slide.html"></iframe>
+            <div class="line"></div>
+            <div class="line" id="line2"></div>
+        </div>
         <div class="main">
-            <div class="finn character-card"></div>
-            <div class="jake character-card"></div>
+            <h2>Main Characters</h2>
+            <div class="main-container">
+
+                <img id="connection" src="img/Connection.png"/>
+                <div class="two-main-characters">
+                    <div id="finn" class="character-card">
+                        <div class="card-profile"></div>
+                        <h3 class="character-name">Finn the Human</h3>
+                        <div class="character-info">
+                            A human boy who loves nothing more than going on adventures and saving the day. He wears a hat that covers his extremely long flowing yellow hair.
+                        </div>
+                        <div class="quote">"Homies help homies alwas" - Finn</div>
+                    </div>
+                    <div id="jake" class="character-card">
+                        <div class="card-profile"></div>
+                        <h3 class="character-name">Jake the Dog</h3>
+                        <div class="character-info">
+                            Finn's best friend, and adoptive brother. Jake has a unique set of abilities that allow him to manipulate the shape and size of his body.
+                        </div>
+                        <div class="quote">"Sometimes, I think there's a monster who lives in my stomach, and that's why I'm hungry all the time." - Jake</div>
+                    </div>
+                </div>
+
+                <div class="other-main-characters">
+                    <img id="connection2" src="img/Connection2.png"/>
+                    <div class="three-character-cards">
+                        <div id="pb" class="character-card-type-2">
+                            <div class="card-profile-type-2"></div>
+                            <div class="quote-type-2-container">
+                                <div class="quote-type-2">The answer was too simple ans I was too smart to see it</div>
+                            </div>
+                            <h3 class="character-name-type-2">Princess Bubblegum</h3>
+                        </div>
+                        <div id="mvq" class="character-card-type-2">
+                            <div class="card-profile-type-2"></div>
+                            <div class="quote-type-2-container">
+                                <div class="quote-type-2">I'm not mean, Im 1000 yrs old! Ijust lost truck of my moral code!</div>
+                            </div>
+                            <h3 class="character-name-type-2">Marceline the Vampire Queen</h3>
+                        </div>
+                        <div id="ik" class="character-card-type-2">
+                            <div class="card-profile-type-2"></div>
+                            <div class="quote-type-2-container">
+                                <div class="quote-type-2">you don't understand! If you were me you would do thigs I would do!</div>
+                            </div>
+                            <h3 class="character-name-type-2">Ice King</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="logo">
+            <img src="img/Adventure_Time_logo.png"/>
         </div>
     </body>
 </html>
