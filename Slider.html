@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Slider</title>
+        <style>
+            *{margin:0; padding:0; box-sizing: border-box;}
+            html{font-size: 10px;}
+            .container{
+                position: relative;
+                top:3rem;
+                width:100rem; height:60rem;
+                /* background-color: rgba(211, 211, 211, 0.219);
+                border-radius: 6rem; */
+                padding-top: 5rem;
+                margin:auto;}
+            .slider-container{
+                position: relative;
+                width:90rem; height:47rem;
+                background-color: rgb(119, 119, 119);
+                border-radius: 4rem;
+                scroll-behavior: smooth;
+                box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.404);
+                overflow: hidden;
+                margin: auto;}
+            .show{
+                position: absolute;
+                width: calc(90rem * 3); height: 100%;
+            }
+            .slid{
+                width: 90rem; height: 100%;
+                background-repeat: no-repeat;
+                background-size:cover;
+                background-position: center;
+                float:left;
+            }
+            #s01{ background-image: url(img/01.jpg);}
+            #s02{ background-image: url(img/02.png);}
+            #s03{ background-image: url(img/03.jpg);}
+            .bottons-container{
+                margin:auto;
+                margin-top: 2.2rem;
+                text-align: center;}
+            .bbb{margin:0 4rem; display: inline;}
+            .botton {
+            width: 1.5rem; height: 1.5rem;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: rgba(34, 34, 34, 0.74);}
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="slider-container">
+                <div class="show">
+                    <div class="slid" id="s01"></div>
+                    <div class="slid" id="s02"></div>
+                    <div class="slid" id="s03"></div>
+                </div>
+            </div>
+            <div class="bottons-container">
+                <div class="bottons">
+                    <div class="bbb"><a href="#s01"><div class="botton" id="b01"></div></a></div>
+                    <div class="bbb"><a href="#s02"><div class="botton" id="b02"></div></a></div>
+                    <div class="bbb"><a href="#s03"><div class="botton" id="b03"></div></a></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
